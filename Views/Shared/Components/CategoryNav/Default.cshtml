@@ -1,0 +1,19 @@
+@model IReadOnlyList<string>
+@{
+    var current = ViewData["Current"] as string ?? "";
+}
+
+<nav class="category-nav" aria-label="Menu categories">
+    <div class="container">
+        <a asp-controller="Menu" asp-action="Index"
+           class="@(current == "" ? "active" : null)">All</a>
+
+        @foreach (var category in Model)
+        {
+            var isActive = string.Equals(category, current, StringComparison.OrdinalIgnoreCase);
+            <a asp-controller="Menu" asp-action="Index" asp-route-category="@category"
+               class="@(isActive ? "active" : null)"
+               aria-current="@(isActive ? "page" : null)">@category</a>
+        }
+    </div>
+</nav>

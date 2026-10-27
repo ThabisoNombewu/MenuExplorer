@@ -1,0 +1,35 @@
+@using System.Globalization
+@model MenuDetailsViewModel
+@{
+    var item = Model.Item;
+    ViewData["Title"] = item.Name;
+}
+
+<a class="back" asp-action="Index" asp-route-category="@item.Category">Back to @item.Category</a>
+
+<article class="details">
+    <div>
+        <span class="card-category">@item.Category</span>
+        <h1>@item.Name</h1>
+        <star-rating value="@item.Rating" />
+        <p class="details-desc">@item.Description</p>
+        @if (item.IsVegetarian)
+        {
+            <p class="details-veg"><span class="veg">V</span> Vegetarian</p>
+        }
+    </div>
+    <div class="details-price">R@(item.Price.ToString("0.00", CultureInfo.InvariantCulture))</div>
+</article>
+
+@if (Model.Related.Any())
+{
+    <section>
+        <h2>More @item.Category.ToLower()</h2>
+        <div class="grid">
+            @foreach (var related in Model.Related)
+            {
+                <partial name="_MenuItemCard" model="related" />
+            }
+        </div>
+    </section>
+}

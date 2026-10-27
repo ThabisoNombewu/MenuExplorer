@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - The Crown Kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" asp-controller="Menu" asp-action="Index">
+                <svg class="brand-mark" viewBox="0 0 24 18" aria-hidden="true">
+                    <path d="M2 16 L1 4 L7 9 L12 1 L17 9 L23 4 L22 16 Z" />
+                </svg>
+                The Crown Kitchen
+            </a>
+            <span class="tagline">Good food, fairly priced</span>
+        </div>
+        @await Component.InvokeAsync("CategoryNav")
+    </header>
+
+    <main class="container">
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            Prices are in rand and include VAT.
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

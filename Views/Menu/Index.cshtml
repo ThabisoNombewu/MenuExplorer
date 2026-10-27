@@ -1,0 +1,45 @@
+@model MenuIndexViewModel
+@{
+    var heading = string.IsNullOrWhiteSpace(Model.Category) ? "Our menu" : Model.Category;
+    ViewData["Title"] = heading;
+}
+
+@if (Model.Specials.Any())
+{
+    <section class="specials">
+        <h2>Today's specials</h2>
+        <div class="grid">
+            @foreach (var item in Model.Specials)
+            {
+                <partial name="_MenuItemCard" model="item" />
+            }
+        </div>
+    </section>
+}
+
+<section>
+    <div class="section-head">
+        <h1>@heading</h1>
+        @if (Model.Items.Any())
+        {
+            <input type="search" id="menu-search" class="search"
+                   placeholder="Search dishes" aria-label="Search dishes" />
+        }
+    </div>
+
+    @if (Model.Items.Any())
+    {
+        <div class="grid" id="menu-grid">
+            @foreach (var item in Model.Items)
+            {
+                <partial name="_MenuItemCard" model="item" />
+            }
+        </div>
+
+        <p class="empty" id="search-empty" hidden>Nothing matches that search.</p>
+    }
+    else
+    {
+        <partial name="_EmptyState" model="@($"We don't have anything under \"{Model.Category}\" right now.")" />
+    }
+</section>

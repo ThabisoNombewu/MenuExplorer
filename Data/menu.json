@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Peri-Peri Chicken Livers",
+    "description": "Pan-fried livers in a creamy peri-peri sauce, served with toasted ciabatta for mopping up.",
+    "price": 89.00,
+    "category": "Starters",
+    "isVegetarian": false,
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Roasted Butternut Soup",
+    "description": "Butternut roasted with nutmeg and a little chilli, finished with cream and pumpkin seeds.",
+    "price": 72.00,
+    "category": "Starters",
+    "isVegetarian": true,
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "name": "Calamari Strips",
+    "description": "Lightly dusted and flash-fried. Comes with lemon and a garlic aioli.",
+    "price": 95.00,
+    "category": "Starters",
+    "isVegetarian": false,
+    "rating": 3
+  },
+  {
+    "id": 4,
+    "name": "Halloumi & Fig Salad",
+    "description": "Grilled halloumi, fresh figs, rocket and a balsamic reduction.",
+    "price": 98.00,
+    "category": "Starters",
+    "isVegetarian": true,
+    "rating": 4
+  },
+  {
+    "id": 5,
+    "name": "Bobotie",
+    "description": "Spiced mince baked under a savoury egg custard. Served with yellow rice and chutney.",
+    "price": 165.00,
+    "category": "Mains",
+    "isVegetarian": false,
+    "rating": 5
+  },
+  {
+    "id": 6,
+    "name": "300g Sirloin",
+    "description": "Basted and grilled to your liking, with hand-cut chips and a pepper or mushroom sauce.",
+    "price": 229.00,
+    "category": "Mains",
+    "isVegetarian": false,
+    "rating": 4
+  },
+  {
+    "id": 7,
+    "name": "Cape Malay Vegetable Curry",
+    "description": "Sweet potato, chickpeas and spinach in a fragrant curry. Basmati rice and sambals on the side.",
+    "price": 145.00,
+    "category": "Mains",
+    "isVegetarian": true,
+    "rating": 4
+  },
+  {
+    "id": 8,
+    "name": "Line Fish of the Day",
+    "description": "Ask your waiter what came in this morning. Grilled with lemon butter, served with seasonal veg.",
+    "price": 210.00,
+    "category": "Mains",
+    "isVegetarian": false,
+    "rating": 4
+  },
+  {
+    "id": 9,
+    "name": "Mushroom Risotto",
+    "description": "Arborio rice with porcini and button mushrooms, parmesan and a drizzle of truffle oil.",
+    "price": 155.00,
+    "category": "Mains",
+    "isVegetarian": true,
+    "rating": 3
+  },
+  {
+    "id": 10,
+    "name": "Malva Pudding",
+    "description": "Warm, sticky and spongy, with custard or vanilla ice cream. A proper South African classic.",
+    "price": 75.00,
+    "category": "Desserts",
+    "isVegetarian": true,
+    "rating": 5
+  },
+  {
+    "id": 11,
+    "name": "Milk Tart",
+    "description": "Thin buttery crust, smooth milky filling and a generous dusting of cinnamon.",
+    "price": 62.00,
+    "category": "Desserts",
+    "isVegetarian": true,
+    "rating": 4
+  },
+  {
+    "id": 12,
+    "name": "Chocolate Fondant",
+    "description": "Gooey centre, baked to order. Please allow 15 minutes.",
+    "price": 85.00,
+    "category": "Desserts",
+    "isVegetarian": true,
+    "rating": 4
+  },
+  {
+    "id": 13,
+    "name": "Rooibos Iced Tea",
+    "description": "House-brewed rooibos with honey, lemon and fresh mint.",
+    "price": 38.00,
+    "category": "Drinks",
+    "isVegetarian": true,
+    "rating": 4
+  },
+  {
+    "id": 14,
+    "name": "Craft Lager",
+    "description": "A crisp local lager on tap. 440ml.",
+    "price": 48.00,
+    "category": "Drinks",
+    "isVegetarian": true,
+    "rating": 3
+  },
+  {
+    "id": 15,
+    "name": "Granadilla Soda",
+    "description": "Fresh granadilla pulp topped up with soda water. Not too sweet.",
+    "price": 35.00,
+    "category": "Drinks",
+    "isVegetarian": true,
+    "rating": 5
+  },
+  {
+    "id": 16,
+    "name": "Flat White",
+    "description": "Double shot with velvety steamed milk.",
+    "price": 32.00,
+    "category": "Drinks",
+    "isVegetarian": true,
+    "rating": 4
+  }
+]

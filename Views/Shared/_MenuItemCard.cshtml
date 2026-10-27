@@ -1,0 +1,19 @@
+@using System.Globalization
+@model MenuItem
+
+<a class="card" asp-controller="Menu" asp-action="Details" asp-route-id="@Model.Id"
+   data-search="@($"{Model.Name} {Model.Description}".ToLowerInvariant())">
+    <div class="card-top">
+        <span class="card-category">@Model.Category</span>
+        @if (Model.IsVegetarian)
+        {
+            <span class="veg" title="Vegetarian">V</span>
+        }
+    </div>
+    <h3>@Model.Name</h3>
+    <p>@Model.Description</p>
+    <div class="card-bottom">
+        <star-rating value="@Model.Rating" />
+        <span class="price">R@(Model.Price.ToString("0.00", CultureInfo.InvariantCulture))</span>
+    </div>
+</a>
